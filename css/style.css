@@ -1,16 +1,23 @@
 
 
-.float-container {
-   border: 1px solid #fff;
+.float-container{
+   border: 1px solid coral;
+
+   border-radius: 1rem;
     padding: 12px;
-    background-color:cornflowerblue;
+
+    margin: 10 PX;
+
+    height: 500px;
 }
 
 .float-child {
     width: 50%;
     float: left;
     padding: 9px;
-   /* border: 1px solid coral;*/
+    margin: auto;
+   border: 1px solid blue;
+   height: 450px;
 }
 
 .float-child_V_left {
@@ -33,11 +40,6 @@ h3 {
     color: darkcyan;
     text-underline-position: auto;
     text-decoration: underline;
+ 
   }
 
-  body
-  {
-background-color: lightblue;
-
-
-  }
