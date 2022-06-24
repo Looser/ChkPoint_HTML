@@ -12,13 +12,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   
     <link rel="stylesheet" href="../css/style.css" >
+
+
+    <link rel="stylesheet" href="../res/bootstrap.min.css" >
+
+
   </head>
+
+
   <body>
     <header>
 
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="nav-link" href="../html/index.html">Me</a>
+          <a class="nav-link" href="#About">Me</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,14 +34,19 @@
             
               <a class="nav-link" href="#Resume">Resume</a>
               <a class="nav-link" href="#Work">Work</a>
-              <a class="nav-link" href="../html/contact.html">Contact</a>
+              <a class="nav-link" href="#Contact">Contact</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
 
-      <br><br><br>
+
+
+      <br>
+
+<section id ="About">
+
       
       <div class="float-container">
 
@@ -52,40 +64,71 @@
         </div>
         
       </div>
+
+    </section>
       
-<br><br>
+<br>
 
-      <div class="float-container">
-
-        <div class="float-child_V_left">
-          <div class="green">
-
-            <ol>
-              <li>Core</li>
-              <li>ASP</li>
-            </ol>
+    
 
 
+<section id="Contact">
+  
+  <div class="container py-4">
 
-         </div>
-        </div>
-        
-        <div class="float-child_V_right">
-          <div class="blue"> <video src="https://www.youtube.com/watch?v=DqD-NJf7-OM"></div>
-        </div>
-        
+    <!-- Bootstrap 5 starter form -->
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+  
+      <!-- Name input -->
+      <div class="mb-3">
+        <label class="form-label" for="name">Name</label>
+        <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+        <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+      </div>
+  
+      <!-- Email address input -->
+      <div class="mb-3">
+        <label class="form-label" for="emailAddress">Email Address</label>
+        <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+        <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
       </div>
 
-
-<div id="Resume">
+        <!-- Message input -->
+    <div class="mb-3">
+        <label class="form-label" for="message">Message</label>
+        <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+        <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+      </div>
   
-  <p></p>
-
-
+      <!-- Form submissions success message -->
+      <div class="d-none" id="submitSuccessMessage">
+        <div class="text-center mb-3">Form submission successful!</div>
+      </div>
+  
+      <!-- Form submissions error message -->
+      <div class="d-none" id="submitErrorMessage">
+        <div class="text-center text-danger mb-3">Error sending message!</div>
+      </div>
+  
+      <!-- Form submit button -->
+      <div class="d-grid">
+        <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button>
+      </div>
+    </form>
 
 </div>
 
-<br><br><br>
+
+
+</section>
+
+
+
+
+
+
+<br>
 
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -235,7 +278,9 @@
 
 
 
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
+<script src="../res/sb-forms-0.4.1.js"></script>
 
 
 
