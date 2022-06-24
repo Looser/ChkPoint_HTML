@@ -1,9 +1,152 @@
 
+a {
+
+text-decoration: none;
+
+width: fit-content;
+
+font-size:larger;
+
+
+
+
+}
+
+span{
+width: max-content;
+
+padding: 8px;
+
+}
+
+div{
+display: inline-block;
+
+
+
+
+}
+a :active {
+
+    text-decoration: none;
+    
+    
+    
+    
+    }
+
+    a ::after {
+
+        text-decoration: none;
+        
+        
+        
+        
+        }
+
+.mynAV {
+
+    top: 3;
+
+border-radius: 3%;
+
+    width: 97%;
+
+  height: 50px;
+
+    position: fixed;
+
+    padding: 9px;
+
+    background-color: lightseagreen;
+  
+    padding-right: 12px;
+ 
+
+    text-align: right;
+
+}
+
+#contactDiv{
+
+width:100%;
+  vertical-align: middle;
+  height: 50px;
+  border: 1px solid cornflowerblue;
+flex: inherit;
+
+padding: 3px;
+
+height: fit-content;
+
+}
+
+body{
+
+
+
+padding-right: 10px;
+
+background-color: azure;
+
+
+}
+
+
+.gridcontainer
+{
+display: grid;
+
+grid-template-columns: auto auto  ;
+
+grid-template-rows: 350px;
+
+
+
+
+}
+
+/*.container{
+
+display: flex;
+
+align-items: stretch;
+
+}*/
+
+.btn{
+
+    width: fit-content;
+
+    text-align: center;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    color:blueviolet;
+
+   /* box-shadow: #00638E;*/
+
+    transition: 1000 ms ease-in-out;
+
+    border-radius: 5px ;
+
+    border:  1px;
+
+}
+
+.btn  :hover{
+
+background-color :rgb(8, 136, 248);
+color: rgba(97, 29, 4, 0.455);
+/*box-shadow: 2px 0px 22px -2px cornflowerblue;*/
+
+}
+
+
 
 .float-container{
-   border: 1px solid coral;
-
-   border-radius: 1rem;
+  
+width: 100%;
     padding: 12px;
 
     margin: 10 PX;
@@ -11,27 +154,23 @@
     height: 500px;
 }
 
-.float-child {
-    width: 50%;
+.float-child-Left {
+    width: 47%;
     float: left;
     padding: 9px;
-    margin: auto;
-   border: 1px solid blue;
+  
+ 
+   height: 450px;
+}
+.float-child-Right {
+    width: 47%;
+    float: right;
+    padding: 9px;
+  
+ 
    height: 450px;
 }
 
-.float-child_V_left {
-    width: 70%;
-    float: left;
-    padding: 9px;
-   /* border: 1px solid coral;*/
-}
-.float-child_V_right {
-    width: 30%;
-    float: left;
-    padding: 9px;
-   /* border: 1px solid coral;*/
-}
 
 h3 {
     font-size: 30px;
@@ -43,3 +182,113 @@ h3 {
  
   }
 
+ 
+
+ ul, ol {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(13, 165, 220, 0.614);
+    text-underline-position: auto;
+    text-decoration: underline;
+ font-weight: 400;
+  }
+
+  li {
+    font-size: 17px;
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgba(13, 165, 220, 0.914);
+    text-underline-position: auto;
+  
+ 
+  }
+
+
+  p {
+
+display: block;
+
+font-size: medium;
+
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+color: #072388;
+  }
+
+
+
+  .butt {
+    box-shadow:inset 0px 1px 0px 0px #fce2c1;
+    background:linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color:#05490b;
+    border-radius:11px;
+    border:2px solid #1e1302;
+    display:inline-block;
+    cursor:pointer;
+    color:#02042e;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #cc9f52;
+  }
+  .butt:hover {
+    background:linear-gradient(to bottom, #fb9e25 5%, #072388 100%);
+    background-color:#fb9e25;
+    transition: 10000ms ease-in-out;
+  }
+  .butt:active {
+    position:relative;
+    top:1px;
+  }
+
+
+
+  .buttCOntact {
+    box-shadow:inset 0px 1px 0px 0px #0ee688;
+    background:linear-gradient(to bottom, #d2eef1cf 5%, #85c6f1 100%);
+    background-color:#05490b;
+    border-radius:11px;
+    border:2px solid #1e1302;
+    display:inline-block;
+    cursor:pointer;
+    color:#fdfcfc;
+    font-family:Arial;
+    font-size:16px;
+    font-weight:bold;
+    padding:8px 18px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #e2bff1;
+  }
+
+
+  .buttCOntact:hover {
+    background:linear-gradient(to bottom, #024f62 5%, #072388 100%);
+    background-color:#044367;
+    transition: 100000ms ease-in-out;
+  }
+
+
+  .buttCOntact:active {
+    position:relative;
+    top:1px;
+  }
+
+
+  input {
+    width: 99%;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footerss {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#0e8ff1;
+    color: white;
+    text-align: center;
+    border: solid 1px #05490b;
+  }
