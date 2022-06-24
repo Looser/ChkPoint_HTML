@@ -1,8 +1,27 @@
-.div{
-    position: relative;
-    width: 100px;
-    height: 100px;
-    background: yellow;
-    border-radius: 50%;
-    border: 5px solid red;
+
+
+.float-container {
+   border: 1px solid #fff;
+    padding: 12px;
+    background-color:cornflowerblue;
+}
+
+.float-child {
+    width: 50%;
+    float: left;
+    padding: 9px;
+   /* border: 1px solid coral;*/
+}
+
+.float-child_V_left {
+    width: 70%;
+    float: left;
+    padding: 9px;
+   /* border: 1px solid coral;*/
+}
+.float-child_V_right {
+    width: 30%;
+    float: left;
+    padding: 9px;
+   /* border: 1px solid coral;*/
 }
